@@ -1,0 +1,11 @@
+body{
+  margin:0;
+}
+.nav-header{
+  margin: 0;
+  padding: 2%;
+  background-color: #F55A5A;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+}
