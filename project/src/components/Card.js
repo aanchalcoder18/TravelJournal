@@ -1,23 +1,30 @@
 import React from "react";
+import destination from "../images/destination.png";
 
 function Card(props){
     return(
         <div>
             <div className="card">
                 <img 
-                    src={`../images/${props.imageURL}`}
+                    src={`${props.imageUrl}`}
                     className="card-image" 
                 />
                 <div className="card-overview">
                     <div className="card-title">
-                        <p>{props.location}</p>
-                        <p className="card-url">View On Google Maps</p>
-                        {/* <script src={props.googleMapsUrl}> </script> need to fix */}
+                        <img 
+                            src={destination}
+                            className="card-logo"
+                        />
+                        <p className="card-location">{props.location}</p>
+                        <a 
+                            href={props.googleMapsUrl}
+                            className="card-url"    
+                        >view on google maps</a>
                     </div>
-                    <h2>{props.title}</h2>
+                    <h2 className="card-tle">{props.title}</h2>
                     <div className="card-description">
-                        <h5>{props.startDate} - {props.endDate}</h5>
-                        <p>{props.description}</p>
+                        <h5 className="card-date">{props.startDate} - {props.endDate}</h5>
+                        <p id="card-des">{props.description}</p>
                     </div>
                 </div>
                 

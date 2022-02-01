@@ -1,9 +1,14 @@
 import React from "react";
+import globe from "../images/globe.png";
 
 function Navbar(){
     return(
-        <nav>
-            <h5 className="nav-header">my travel project</h5>
+        <nav className="nav-header">
+            <div className="nav-div">
+                <img src={globe} className="nav-image"/>
+                <h5 className="nav-title">my travel project</h5>
+            </div>
+            
         </nav>
     )
 
